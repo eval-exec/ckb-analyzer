@@ -1,0 +1,29 @@
+[package]
+name = "ckb-log-analyzer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.22"
+plotters = "0.3.4"
+#ckb-db = "0.104.1"
+#ckb-db-schema = "0.104.1"
+#ckb-store = "0.104.1"
+#ckb-util = "0.104.1"
+scan_fmt = "0.2.6"
+itertools = "0.10.5"
+log = "0.4.17"
+env_logger = "0.9.1"
+serde = {version = "1.0.145", features = ["derive"]}
+serde_cbor = "0.11.2"
+rayon = "1.5.3"
+crossbeam-queue = "0.3.6"
+clap = { version = "4.0.18" ,features = ["derive"]}
+indicatif = "0.17.3"
+
+[target]
+[[bin]]
+name = "ckb-log-analyzer"
+path = "src/main.rs"
